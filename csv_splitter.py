@@ -18,6 +18,6 @@ def split_csv_async(file_name, chunk_size, bucket_name, s3_client):
 s3_client = boto3.client('s3')
 
 # write the code to call the above function
-split_csv_async("annual-enterprise-survey-2021-financial-year-provisional-csv.csv", 10000, "working-directory", s3_client)
+split_csv_async("sample_data/annual-enterprise-survey-2021-financial-year-provisional-csv.csv", 10000, "working-directory", s3_client)
 
 
